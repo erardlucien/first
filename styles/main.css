@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header > h1 {
+    margin: 0 0 15px 0;
+    /*
+     * margin-top: 0;
+     * margin-right: 0;
+     * margin-bottom: 15px;
+     * margin-left: 0;
+     */
+}
+nav {
+    display: flex;
+    background: lightskyblue;
+    font-size: 15px;
+    margin: 0 0 15px 0;
+}
+nav > a {
+    margin-left: 15px;
+    display: block;
+}
+nav a {
+    padding: 0 30px 0 0;
+    /*
+     * padding-top: 0;
+     * padding-right: 0;
+     * padding-bottom: 30px;
+     * padding-left: 0;
+     */
+    margin: 0 30px 0 0;
+    text-decoration: none;
+    color: black;
+}
+.group > a {
+    padding: 0 30px 0 0;
+    margin: 0;
+}
+.group-items > li > a {
+    padding: 0 30px 0 0;
+}
+nav > a:hover {
+    background: lightblue;
+}
+.group-items > li > a:hover {
+    background: blue;
+}
+.group-content {
+    display: none;
+    position: absolute;
+}
+.group {
+    margin-right: 30px;
+}
+.group:hover .group-content {
+    background: lightblue;
+    display: block;
+}
+.group:hover {
+    background: lightblue;
+}
+.group-items {
+    list-style: none;
+    display: inline-block;
+}
+.group-content-div {
+    display: none;
+    position: absolute;
+}
+.group-div:hover {
+    background: lightblue;
+}
+.group-items-div a:hover {
+    background: blue;
+}
+.group-div:hover .group-content-div
+{
+    display: block;
+    background: lightblue;
+}
+.group-content-div-1{
+    display: flex;
+}
+.group-items-div a{
+    display: block;
+}
+.group-div > a{
+    padding: 0;
+}
+section > p {
+ font-size: 15px;
+ margin-bottom: 15px;
+}
