@@ -25,8 +25,8 @@ nav a {
     padding: 0 30px 0 0;
     /*
      * padding-top: 0;
-     * padding-right: 0;
-     * padding-bottom: 30px;
+     * padding-right: 30px;
+     * padding-bottom: 0;
      * padding-left: 0;
      */
     margin: 0 30px 0 0;
@@ -60,6 +60,14 @@ nav > a:hover {
 .group:hover {
     background: lightblue;
 }
+/*
+.group-content-1{
+    display: flex;
+}
+*/
+/* When you use 'group-content-1 { display: flex }' please delete 'display: inline-block' from
+ * '.group-items'. The both have the same effect.
+ */
 .group-items {
     list-style: none;
     display: inline-block;
@@ -74,18 +82,17 @@ nav > a:hover {
 .group-items-div a:hover {
     background: blue;
 }
-.group-div:hover .group-content-div
-{
+.group-div:hover .group-content-div {
     display: block;
     background: lightblue;
 }
-.group-content-div-1{
+.group-content-div-1 {
     display: flex;
 }
-.group-items-div a{
+.group-items-div a {
     display: block;
 }
-.group-div > a{
+.group-div > a {
     padding: 0;
 }
 section > p {
