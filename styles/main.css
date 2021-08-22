@@ -135,3 +135,23 @@ section > p {
     background: lightblue;
     padding: 0;
 }
+footer {
+    text-align: center;
+}
+footer time {
+    text-decoration: underline dotted blue;
+}
+/*
+.yearofcreation {
+    display: block;
+    text-align: center;
+    text-decoration: underline dotted;
+}
+*/
+/*
+.yearofcreation {
+   display: flex;
+   justify-content: center;
+   text-decoration: underline dotted;
+}
+*/
