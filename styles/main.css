@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+section ul li:nth-child(2n - 1) {
+    color: green;
+}
+section ul li:nth-child(2n) {
+    color: lightgreen;   
+}
+@media only screen and (min-width: 1024px) {
 header > h1 {
     margin: 0 0 15px 0;
     /*
@@ -18,7 +25,6 @@ nav {
     margin: 0 0 15px 0;
 }
 nav > a {
-    margin-left: 15px;
     display: block;
     padding: 0 30px 0 0;
     /*
@@ -30,6 +36,9 @@ nav > a {
     margin: 0 30px 0 0;
     text-decoration: none;
     color: black;
+}
+nav > a:first-child {
+    margin: 0 30px 0 30px;
 }
 .group a,
 .group-div a {
@@ -117,10 +126,6 @@ nav > a:hover {
 .group-div > a {
     padding: 0;
 }
-section > p {
- font-size: 15px;
- margin-bottom: 15px;
-}
 .subitems-div {
     display: none;
     padding: 0;
@@ -134,6 +139,18 @@ section > p {
 .subitems-div > a {
     background: lightblue;
     padding: 0;
+}
+section {
+    margin: 15px;
+    padding: 15px;
+}
+section > p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+section ul,
+section ol {
+    margin: 15px;   
 }
 footer {
     text-align: center;
@@ -155,3 +172,69 @@ footer time {
    text-decoration: underline dotted;
 }
 */
+}
+@media only screen and (max-width: 800px){
+    header h1{
+        margin: 0 0 0 25px;
+    }
+    nav {
+        margin: 15px 0 0 0;
+        background: lightskyblue;
+    }
+    nav a {
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    nav > a,
+    .group > a,
+    .group-div > a,
+    .group-content,
+    .group-content-div {
+        margin: 0 26px 0 26px;
+    }
+    nav > a:hover,
+    .group:hover,
+    .group-div:hover,
+    .group > a:first-child:hover,
+    .group-div > a:first-child:hover {
+        background: lightblue;
+    }
+    .group a:hover,
+    .group-div a:hover{
+        background: blue;
+    }
+    .group:hover .group-content {
+        display: block;
+    }
+    .group-content-1,
+    .group-content-div-1 {
+        display: block;
+    }
+    .group-div:hover .group-content-div {
+        display: block;
+    }
+    nav ul {
+        list-style: none;
+    }
+    .group-content,
+    .group-content-div {
+        display: none;
+    }
+    .subitems,
+    .subitems-div {
+        display: none;
+    }
+    .item:hover .subitems,
+    .item-div:hover .subitems-div{
+        display: block;
+    }
+    section {
+        padding: 15px;
+        margin: 15px;   
+    }
+    section ul,
+    section ol{
+        margin: 0 0 0 15px; 
+    }
+}
