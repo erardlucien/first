@@ -2,11 +2,129 @@
     margin: 0;
     padding: 0;
 }
+#headline {
+    padding: 0 0 0 30px;
+}
 section ul li:nth-child(2n - 1) {
     color: green;
 }
 section ul li:nth-child(2n) {
     color: lightgreen;   
+}
+#tableofitems {
+    border: 1px solid black;
+}
+#table-div1 tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+    border-left: 1px solid black;
+}
+#table-div1 tr:first-child th:last-child {  
+    border-top-right-radius: 5px;
+    border-right: 1px solid black;
+}
+#table-div1 tr:last-child th:first-child {
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid black;   
+}
+#table-div1 tr:last-child td:last-child {  
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid black;
+}
+.tablecol:nth-child(2n) {
+    background-color: darkgrey;
+}
+.tablecol:nth-child(2n - 1) {
+    background-color: lightgrey;
+}
+#wrappertop {
+    position: absolute;
+    left: 90%;
+}
+#toplink {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 20px;
+}
+#toplink a {
+    padding: 15px 0 0 0;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#toplink:hover {
+    background-color: darkgray;
+}
+@media only screen and (max-width: 800px){
+    header h1{
+        margin: 0 0 0 25px;
+    }
+    nav {
+        margin: 15px 0 0 0;
+        background: lightskyblue;
+    }
+    nav a {
+        padding: 15px 0 15px 0;
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    nav > a,
+    .group > a,
+    .group-div > a,
+    .group-content,
+    .group-content-div {
+        margin: 0 26px 0 26px;
+    }
+    nav > a:hover,
+    .group:hover,
+    .group-div:hover,
+    .group > a:first-child:hover,
+    .group-div > a:first-child:hover {
+        background: lightblue;
+    }
+    .group a:hover,
+    .group-div a:hover{
+        background: blue;
+    }
+    .group:hover .group-content {
+        display: block;
+    }
+    .group-content-1,
+    .group-content-div-1 {
+        display: block;
+    }
+    .group-div:hover .group-content-div {
+        display: block;
+    }
+    nav ul {
+        list-style: none;
+    }
+    .group-content,
+    .group-content-div {
+        display: none;
+    }
+    .subitems,
+    .subitems-div {
+        display: none;
+    }
+    .item:hover .subitems,
+    .item-div:hover .subitems-div{
+        display: block;
+    }
+    section {
+        padding: 15px;
+        margin: 15px;   
+    }
+    section ul,
+    section ol{
+        margin: 0 0 0 15px; 
+    }
+    footer {
+        text-align: center;
+    }
 }
 @media only screen and (min-width: 1024px) {
 header > h1 {
@@ -50,7 +168,7 @@ nav > a:first-child {
     margin: 0;
 }
 .group-items > li > a {
-    padding: 0 30px 0 0;
+    padding: 0 15px 0 0;
 }
 nav > a:hover {
     background: lightblue;
@@ -61,9 +179,14 @@ nav > a:hover {
 .group-content {
     display: none;
     position: absolute;
+    top: 99px;
+    padding: 15px 0 0 0;    
 }
-.group {
+.group,
+.group-div,
+nav > a {
     margin-right: 30px;
+    padding: 15px 0 15px 0;
 }
 .group:hover .group-content {
     background: lightblue;
@@ -103,6 +226,8 @@ nav > a:hover {
 .group-content-div {
     display: none;
     position: absolute;
+    top: 99px;
+    padding: 15px 0 0 0;
 }
 .group-items-div {
     margin: 0 15px 0 0;
@@ -172,69 +297,4 @@ footer time {
    text-decoration: underline dotted;
 }
 */
-}
-@media only screen and (max-width: 800px){
-    header h1{
-        margin: 0 0 0 25px;
-    }
-    nav {
-        margin: 15px 0 0 0;
-        background: lightskyblue;
-    }
-    nav a {
-        display: block;
-        color: black;
-        text-decoration: none;
-    }
-    nav > a,
-    .group > a,
-    .group-div > a,
-    .group-content,
-    .group-content-div {
-        margin: 0 26px 0 26px;
-    }
-    nav > a:hover,
-    .group:hover,
-    .group-div:hover,
-    .group > a:first-child:hover,
-    .group-div > a:first-child:hover {
-        background: lightblue;
-    }
-    .group a:hover,
-    .group-div a:hover{
-        background: blue;
-    }
-    .group:hover .group-content {
-        display: block;
-    }
-    .group-content-1,
-    .group-content-div-1 {
-        display: block;
-    }
-    .group-div:hover .group-content-div {
-        display: block;
-    }
-    nav ul {
-        list-style: none;
-    }
-    .group-content,
-    .group-content-div {
-        display: none;
-    }
-    .subitems,
-    .subitems-div {
-        display: none;
-    }
-    .item:hover .subitems,
-    .item-div:hover .subitems-div{
-        display: block;
-    }
-    section {
-        padding: 15px;
-        margin: 15px;   
-    }
-    section ul,
-    section ol{
-        margin: 0 0 0 15px; 
-    }
 }
