@@ -9,12 +9,14 @@
     <body>
         <header><h1 id="headline">Group</h1></header>
         <!-- <header><section><h1>Group</h1></section></header> -->
-        <nav>
+        <nav id>
             <a href="#">Group with no item 1</a>
-            <div class="group"><a href="#">Group with items 1</a>
+            <div class="group">
+                <a href="#">Group with items 1</a>
+                <button class="close-button">X</button>
                 <div class="group-content">
-                    <p>First and Second items</p>
                     <div class="group-content-1">
+                        <p>First and Second items</p>
                         <ul class="group-items">
                             <li><p>First items</p></li>
                             <li><a href="#">item 1.1</a></li>
@@ -34,9 +36,10 @@
             </div>
             <a href="#">Group with no item 2</a>
             <div class="group"><a href="#">Group with items 2</a>
+                <button class="close-button">X</button>
                 <div class="group-content">
-                    <p>First and Second items</p>
                     <div class="group-content-1">
+                        <p>First and Second items</p>
                         <ul class="group-items">
                             <li><p>First items</p></li>
                             <li><a href="#">item 1.1</a></li>
@@ -52,12 +55,12 @@
                             <li><a href="#">item 2.4</a></li>
                         </ul>
                     </div>
-                    <p>Third and Fourth items</p>
                     <div class="group-content-1">
+                        <p>Third and Fourth items</p>
                         <ul class="group-items">
                             <li><p>Third items</p></li>
-                            <li class="item"><a href="#">item 3.1</a>
-                                <ul class="subitems">
+                            <li class="item"><a href="#subitems-id1">item 3.1</a>
+                                <ul class="subitems" id="subitems-id1">
                                     <li><a href="#">subitem 3.1.1</a></li>
                                     <li><a href="#">subitem 3.1.2</a></li>
                                     <li><a href="#">subitem 3.1.3</a></li>
@@ -79,57 +82,63 @@
             </div>
             <div class="group-div">
                 <a href="#">Group with items 3</a>
+                <button class="close-button">X</button>
                 <div class="group-content-div">
-                    <p>First and Second items</p>
                     <div class="group-content-div-1">
-                        <div class="group-items-div">
-                            <p>First items</p>
-                            <a href="#">item 1.1</a>
-                            <a href="#">item 1.2</a>
-                            <a href="#">item 1.3</a>
-                            <a href="#">item 1.4</a>
-                        </div>
-                        <div class="group-items-div">
-                            <p>Second items</p>
-                            <a href="#">item 2.1</a>
-                            <a href="#">item 2.2</a>
-                            <a href="#">item 2.3</a>
-                            <a href="#">item 2.4</a>
-                        </div>
-                        <div class="group-items-div">
-                            <p>Some other items</p>
-                            <a href="#">item 0.1</a>
-                            <a href="#">item 0.2</a>
-                            <a href="#">item 0.3</a>
-                            <a href="#">item 0.4</a>
+                        <p>First and Second items</p>
+                        <div class="group-content-div-2">
+                            <div class="group-items-div">
+                                <p>First items</p>
+                                <a href="#">item 1.1</a>
+                                <a href="#">item 1.2</a>
+                                <a href="#">item 1.3</a>
+                                <a href="#">item 1.4</a>
+                            </div>
+                            <div class="group-items-div">
+                                <p>Second items</p>
+                                <a href="#">item 2.1</a>
+                                <a href="#">item 2.2</a>
+                                <a href="#">item 2.3</a>
+                                <a href="#">item 2.4</a>
+                            </div>
+                            <div class="group-items-div">
+                                <p>Some other items</p>
+                                <a href="#">item 0.1</a>
+                                <a href="#">item 0.2</a>
+                                <a href="#">item 0.3</a>
+                                <a href="#">item 0.4</a>
+                            </div>
                         </div>
                     </div>
-                    <p>Third and Fourth items</p>
                     <div class="group-content-div-1">
-                        <div class="group-items-div">
-                            <p>Third items</p>
-                            <div class="item-div" >
-                                <a href="#">item 3.1</a>
-                                    <div class="subitems-div">
-                                        <a href="#">subitem 3.1.1</a>
-                                        <a href="#">subitem 3.1.2</a>
-                                    </div>
+                        <p>Third and Fourth items</p>
+                        <div class="group-content-div-2">
+                            <div class="group-items-div">
+                                <p>Third items</p>
+                                <div class="item-div" >
+                                    <a href="#subitems.id2">item 3.1</a>
+                                        <div class="subitems-div" id="subitems-id2">
+                                            <a href="#">subitem 3.1.1</a>
+                                            <a href="#">subitem 3.1.2</a>
+                                        </div>
+                                </div>
+                                <a href="#">item 3.2</a>
+                                <a href="#">item 3.3</a>
+                                <a href="#">item 3.4</a>
                             </div>
-                            <a href="#">item 3.2</a>
-                            <a href="#">item 3.3</a>
-                            <a href="#">item 3.4</a>
+                            <div class="group-items-div">
+                                <p>Fourth items</p>
+                                <a href="#">item 4.1</a>
+                                <a href="#">item 4.2</a>
+                                <a href="#">item 4.3</a>
+                                <a href="#">item 4.4</a>
+                            </div>
+                            <div class="group-items-div">
+                                <p>another item</p>
+                                <a href="#">item 0.5</a>
+                            </div>  
                         </div>
-                        <div class="group-items-div">
-                            <p>Fourth items</p>
-                            <a href="#">item 4.1</a>
-                            <a href="#">item 4.2</a>
-                            <a href="#">item 4.3</a>
-                            <a href="#">item 4.4</a>
-                        </div>
-                        <div class="group-items-div">
-                            <p>another item</p>
-                            <a href="#">item 0.5</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
