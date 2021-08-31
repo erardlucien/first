@@ -38,7 +38,7 @@ section ul li:nth-child(2n) {
 }
 #wrappertop {
     position: absolute;
-    left: 90%;
+    left: 70%;
 }
 #toplink {
     width: 40px;
