@@ -215,14 +215,9 @@ nav > a {
 .group:hover {
     background: lightblue;
 }
-/*
 .group-content-1{
     display: flex;
 }
-*/
-/* When you use 'group-content-1 { display: flex }' please delete 'display: inline-block' from
- * '.group-items'. The both have the same effect.
- */
 .group-items {
     list-style: none;
     display: inline-block;
