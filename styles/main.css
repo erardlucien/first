@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+nav {
+    border: 1px solid lightskyblue;
+}
 #headline {
     padding: 0 0 0 30px;
 }
@@ -46,18 +49,21 @@ section ul li:nth-child(2n) {
 #toplink {
     width: 40px;
     height: 40px;
-    font-size: 45px;
+    font-size: 30px;
     border: 1px solid gray;
     text-align: center;
     border-radius: 20px;
 }
 #toplink a {
-    color: white;
+    color: transparent;
     background-color: transparent;
     text-decoration: none;
 }
 #toplink:hover {
     background-color: darkgray;
+}
+#toplink:hover a {
+    color: white;
 }
 
 @media only screen and (max-width: 800px){
@@ -65,10 +71,12 @@ section ul li:nth-child(2n) {
         margin: 0 0 0 25px;
     }
     .close-button {
-        display: none;
+        border: none;
+        text-decoration: none;
+        background-color: transparent;
         margin: 0 0 0 70%;
     }
-    .close-button:hover ~ .group-content > .group-content-1{
+    .close-button:hover ~ .group-content > .group-content-1 {
         display: none;
     }
     .close-button:hover ~ .group-content-div > .group-content-div-1 {
