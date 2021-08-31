@@ -216,7 +216,7 @@ nav > a {
     background: lightblue;
 }
 .group-content-1{
-    display: flex;
+    display: block;
 }
 .group-items {
     list-style: none;
