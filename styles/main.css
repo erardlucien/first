@@ -79,7 +79,7 @@ section ol{
     padding: 0 0 0 15px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 799px){
     header h1{
         margin: 0 0 0 25px;
     }
