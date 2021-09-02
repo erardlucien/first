@@ -68,19 +68,15 @@ section ul li:nth-child(2n) {
 
 #unordered-list {
     background-color: lightgreen;
-    /* width: 126px; */
-    width: 67px;
 }
 
 #unordered-list ul li{
-    /* font-size: 30px; */
     font-size: 16px;
 }
-/*
-#unordered-list ul {
-    padding: 0 0 0 15px;
+section ul,
+section ol{
+    margin: 0 0 0 15px; 
 }
-*/
 
 @media only screen and (max-width: 800px){
     header h1{
@@ -160,10 +156,6 @@ section ul li:nth-child(2n) {
     section {
         padding: 15px;
         margin: 15px;   
-    }
-    section ul,
-    section ol{
-        margin: 0 0 0 15px; 
     }
     footer {
         text-align: center;
@@ -289,10 +281,6 @@ section {
 section > p {
     font-size: 15px;
     margin-bottom: 15px;
-}   
-section ul,
-section ol {
-    margin: 0 0 0 15px;   
 }
 footer {
     text-align: center;
