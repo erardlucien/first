@@ -71,7 +71,7 @@ section ul li:nth-child(2n) {
     /* width: 126px; */
     width: 67px;
 }
-<<<<<<< HEAD
+
 #unordered-list ul li{
     /* font-size: 30px; */
     font-size: 16px;
@@ -81,9 +81,7 @@ section ul li:nth-child(2n) {
     padding: 0 0 0 15px;
 }
 */
-=======
 
->>>>>>> b0fe1d0100573859cb018090ef8d548fd2274082
 @media only screen and (max-width: 800px){
     header h1{
         margin: 0 0 0 25px;
