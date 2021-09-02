@@ -75,7 +75,8 @@ section ul li:nth-child(2n) {
 }
 section ul,
 section ol{
-    margin: 0 0 0 15px; 
+    margin: 0 0 0 15px;
+    padding: 0 0 0 15px;
 }
 
 @media only screen and (max-width: 800px){
