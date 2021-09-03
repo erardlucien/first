@@ -43,8 +43,7 @@ section ul li:nth-child(2n) {
     background-color: lightgrey;
 }
 #wrappertop {
-    position: absolute;
-    left: 70%;
+    float: right;
 }
 #toplink {
     width: 40px;
@@ -73,13 +72,16 @@ section ul li:nth-child(2n) {
 #unordered-list ul li{
     font-size: 16px;
 }
+section {
+    margin: 15px;
+    padding: 15px;
+}
 section ul,
-section ol{
-    margin: 0 0 0 15px;
-    padding: 0 0 0 15px;
+section ol {
+    padding: 0 0 0 30px;
 }
 
-@media only screen and (max-width: 799px){
+@media only screen and (max-width: 800px){
     header h1{
         margin: 0 0 0 25px;
     }
@@ -87,7 +89,7 @@ section ol{
         border: none;
         text-decoration: none;
         background-color: transparent;
-        margin: 0 0 0 70%;
+        margin: 0 0 0 14rem;
     }
     .close-button:hover ~ .group-content > .group-content-1 {
         display: none;
@@ -153,10 +155,6 @@ section ol{
     .item:hover .subitems,
     .item-div:hover .subitems-div{
         display: block;
-    }
-    section {
-        padding: 15px;
-        margin: 15px;   
     }
     footer {
         text-align: center;
@@ -274,10 +272,6 @@ nav > a:hover {
 }
 .subitems-div > a {
     background: lightblue;
-}
-section {
-    margin: 15px;
-    padding: 15px;
 }
 section > p {
     font-size: 15px;
