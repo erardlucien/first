@@ -43,7 +43,7 @@ section ul li:nth-child(2n) {
     background-color: lightgrey;
 }
 #wrappertop {
-    float: right;
+    margin: 0 0 0 80%;
 }
 #toplink {
     width: 40px;
