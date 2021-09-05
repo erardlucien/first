@@ -10,6 +10,10 @@ nav {
 }
 .close-button {
     display: none;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0 0 0 80%;
 }
 section ul li:nth-child(2n - 1) {
     color: green;
@@ -42,9 +46,7 @@ section ul li:nth-child(2n) {
 .tablecol:nth-child(2n - 1) {
     background-color: lightgrey;
 }
-#wrappertop {
-    margin: 0 0 0 80%;
-}
+
 #toplink {
     width: 40px;
     height: 40px;
@@ -80,21 +82,18 @@ section ul,
 section ol {
     padding: 0 0 0 30px;
 }
+#wrappertop {
+    margin: 0 0 0 80%;
+}
 
 @media only screen and (max-width: 800px){
     header h1{
         margin: 0 0 0 25px;
     }
-    .close-button {
-        border: none;
-        text-decoration: none;
-        background-color: transparent;
-        margin: 0 0 0 14rem;
-    }
-    .close-button:hover ~ .group-content > .group-content-1 {
+    .close-button:focus ~ .group-content > .group-content-1 {
         display: none;
     }
-    .close-button:hover ~ .group-content-div > .group-content-div-1 {
+    .close-button:focus ~ .group-content-div > .group-content-div-1 {
         display: none;
     }
     .group:hover .close-button,
@@ -111,14 +110,8 @@ section ol {
         padding: 15px 0 15px 0;
         display: block;
         color: black;
+        width: 100%;
         text-decoration: none;
-    }
-    nav > a,
-    .group > a,
-    .group-div > a,
-    .group-content,
-    .group-content-div {
-        margin: 0 26px 0 26px;
     }
     nav > a:hover,
     .group:hover,
