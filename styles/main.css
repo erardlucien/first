@@ -69,6 +69,7 @@ section ul li:nth-child(2n) {
 
 #unordered-list {
     background-color: lightgreen;
+    width: 5.4em;
 }
 
 #unordered-list ul li{
